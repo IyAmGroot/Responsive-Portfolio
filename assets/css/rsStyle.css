@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+[class*="col-"] {
+  float: left;
+  /* padding: 15px;
+  border: 1px solid red; */
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html {
+  font-family: "Arial", "Hlevetica Neue", Helvetica, sans-serif;
+  color: #777777;
+}
+
+head {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+header {
+  font-family: "Georgia", Times, Times New Roman, serif;
+  background-color: #ffffff;
+  border-bottom-color: #cccccc;
+  margin: 0 auto;
+  width: 60%;
+}
+
+#headerDiv {
+  background-color: #ffffff;
+  border-bottom-color: 2px solid #666666;
+  margin: 0;
+}
+
+body {
+  background-image: url(../images/old_moon.png);
+  margin: 0;
+}
+
+h1 {
+  font-family: "Georgia", Times, Times New Roman, serif;
+  color: #4aaaa5;
+}
+
+/*FORM SETTINGS*/
+.formDiv {
+  width: 95%;
+  margin: 20px auto;
+}
+
+.singleLine {
+  width: 100%;
+}
+#submitMe {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px auto 10px 25px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#h1Div {
+  padding-left: 10px;
+}
+img {
+  padding: 0 40px 0 0;
+}
+
+li {
+  float: right;
+  /* border-right: 1px solid #666666; */
+}
+li:first-child {
+  /* border-right: 0; */
+}
+li a {
+  display: block;
+  color: #777777;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+li:hover {
+  background-color: #000;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+
+#container {
+  /* These settings cause the text to overlap image */
+  border: 5px solid #dddddd;
+  background-color: #ffffff;
+  width: 60%;
+  margin: 20px auto;
+}
+#myPic {
+  float: left;
+  /* width: 100%; */
+  margin: 5px 30px 10px 0;
+}
+
+#mainSection {
+  width: 95%;
+  margin: 0 auto;
+}
+#mainSection,
+#section1 {
+  display: inline-block;
+  width: 100%;
+}
+
+.footer {
+  float: clear;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+}
+#myName {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  float: left;
+  padding: 0 10px;
+}
+hr {
+  width: 95%;
+}
+
+footer {
+  border-top: 5px solid #4aaaa5;
+  text-align: center;
+  background-color: #666666;
+}
+/*
+#submitMsg {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#return {
+  width: 25%;
+  margin: 0 auto;
+}
+*/
+.row {
+  /*CREATE MYROW to space row for profile and uncomment height*/
+  width: 100%;
+  /* height: 220px; */
+  background-color: #fff;
+  margin-bottom: 10px;
+} /*
+.left {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.imgText {
+  position: absolute;
+  top: 140px;
+  width: 200px;
+  background-color: #4aaaa5;
+  color: #fff;
+  float: left;
+  text-align: center;
+}
+.imgTile {
+  position: absolute;
+}
+.spacer {
+  height: 80px;
+  width: 100%;
+} */
+@media screen and (max-width: 980px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+  header {
+    width: 100%;
+    text-align: center;
+  }
+  li a {
+    text-align: center;
+  }
+  #myPic {
+    width: 50%;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+  li {
+    float: left;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    background-color: blue;
+  }
+  header {
+    position: static;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
