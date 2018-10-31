@@ -200,7 +200,7 @@ footer {
   /* height: 220px; */
   background-color: #fff;
   margin-bottom: 10px;
-} /*
+} 
 .left {
   position: relative;
   float: left;
@@ -213,7 +213,7 @@ footer {
 .imgText {
   position: absolute;
   top: 140px;
-  width: 200px;
+  width: 100%;
   background-color: #4aaaa5;
   color: #fff;
   float: left;
@@ -221,11 +221,12 @@ footer {
 }
 .imgTile {
   position: absolute;
+  width: 100%;
 }
 .spacer {
   height: 80px;
   width: 100%;
-} */
+} 
 @media screen and (max-width: 980px) {
   body {
     background-color: red;
@@ -236,6 +237,8 @@ footer {
   body {
     background-color: yellow;
   }
+  
+  /*Settings to be moved to 640px*/
   header {
     width: 100%;
     text-align: center;
@@ -250,7 +253,16 @@ footer {
     width: 100%;
   }
   li {
-    float: left;
+    float: right;
+  }
+  #headerDiv {
+	width: 100%;
+	text-align: center;
+  }
+  ul{
+	  text-align: center;
+	  position: relative;
+	  display: inline-block;
   }
 }
 @media screen and (max-width: 640px) {
