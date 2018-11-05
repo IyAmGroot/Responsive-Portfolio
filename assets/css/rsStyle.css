@@ -3,8 +3,6 @@
 }
 [class*="col-"] {
   float: left;
-  /* padding: 15px;
-  border: 1px solid red; */
 }
 .col-1 {
   width: 8.33%;
@@ -56,6 +54,14 @@ html {
 head {
   margin-top: 0;
   padding-top: 0;
+}
+
+.secondRow {
+  display: inline-block;
+}
+
+.secondRow p {
+  margin-left: 40px;
 }
 
 header {
@@ -113,16 +119,14 @@ ul {
   padding-left: 10px;
 }
 img {
-  /* padding: 0 40px 0 0; */
+  padding: 0 40px 0 0;
 }
 
 li {
   float: right;
   /* border-right: 1px solid #666666; */
 }
-li:first-child {
-  /* border-right: 0; */
-}
+
 li a {
   display: block;
   color: #777777;
@@ -154,11 +158,6 @@ a:hover {
 #mainSection {
   width: 95%;
   margin: 0 auto;
-}
-#mainSection,
-#section1 {
-  display: inline-block;
-  width: 100%;
 }
 
 .footer {
@@ -219,9 +218,7 @@ footer {
   width: 100%;
 }
 
-
 @media screen and (max-width: 768px) {
-
   header {
     width: 100%;
     text-align: center;
@@ -233,6 +230,7 @@ footer {
 
   #myPic {
     width: 85%;
+    align-items: center;
   }
   [class*="col-"] {
     width: 100%;
@@ -245,8 +243,6 @@ footer {
   }
 }
 @media screen and (max-width: 640px) {
-
-
   header {
     width: 100%;
     text-align: center;
@@ -255,7 +251,9 @@ footer {
     margin-bottom: 120px;
     margin-top: 50px;
   }
-
+  #container {
+    width: 100%;
+  }
   #myPic {
     width: 100%;
   }
@@ -268,5 +266,4 @@ footer {
   ul {
     display: inline-block;
   }
-}
 }
